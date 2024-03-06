@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp5.MainPage"
+             BackgroundColor="White"
+             >
+
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+
+
+            <Button
+            x:Name="FindFlights"
+            Text="Find flights"
+            Clicked="OnFlight"
+            HorizontalOptions="End"
+            TextColor="White"
+            BackgroundColor="CornflowerBlue"
+            HeightRequest="40"
+            WidthRequest="200"
+            TranslationX="-400"
+            TranslationY="95"
+                />
+
+
+
+            <Label
+            Text="From:"
+            TextColor="Black"
+            TranslationX="25"
+            TranslationY="13"
+                />
+            <Label
+            Text="To:"
+            TextColor="Black"
+            TranslationX="425"
+            TranslationY="-32"
+                />
+            <Label
+            Text="Des:"
+            TextColor="Black"
+            TranslationX="825"
+            TranslationY="-78"
+                />
+
+
+
+
+            <Entry 
+            x:Name="From"
+            Placeholder="From"
+            TextChanged="OnFromTextChanged"
+            Completed="OnFromCompleted" 
+            BackgroundColor="LightGray"
+            WidthRequest="350"
+            TranslationX="-300"
+            TranslationY="-100"
+            TextColor="Black"    
+                />
+
+            <Entry 
+            x:Name="To"
+            Placeholder="To"
+            TextChanged="OnToTextChanged"
+            Completed="OnToCompleted"
+            BackgroundColor="LightGray"    
+            WidthRequest="350"
+            TranslationX="-700"
+            TranslationY="-159"
+            TextColor="Black"    
+            />
+
+            <Entry 
+            x:Name="Des"
+            Placeholder="Des"
+            TextChanged="OnDesTextChanged"
+            Completed="OnDesCompleted" 
+            BackgroundColor="LightGray" 
+            WidthRequest="350"
+            TranslationX="100"
+            TranslationY="-216"
+            TextColor="Black"    
+                />
+
+            <Label
+            Text="Flights"
+            TextColor="Black"
+            FontSize="30"
+            HorizontalTextAlignment="Center"
+            TranslationX="0"
+            TranslationY="0"
+                />
+            
+            <Entry
+            x:Name="flight"
+            Placeholder="Enter text" 
+            BackgroundColor="LightGray"
+            TranslationX="0"
+            TranslationY="0"
+            TextColor="Black"    
+                />
+
+            
+            <Label
+            Text="Reserve"
+            FontSize="30"
+            HorizontalTextAlignment="Center"
+            TranslationX="0"
+            TranslationY="0"
+            TextColor="Black"    
+                />
+
+
+            <Label
+            Text="Flight Code"
+            TextColor="Black"
+                />
+
+            <Entry 
+            x:Name="FlightCode"
+            Placeholder="Enter text" 
+            BackgroundColor="LightGray" 
+            TranslationX="0"
+            TranslationY="0"
+            TextColor="Black"    
+                />
+
+            <Label
+            TextColor="Black"
+            Text="Airline"
+                />
+
+            <Entry 
+            x:Name="Airline"
+            Placeholder="Enter text" 
+            BackgroundColor="LightGray" 
+            TranslationX="0"
+            TranslationY="0"
+            TextColor="Black"    
+                />
+
+            <Label
+            Text="Day"
+            TextColor="Black"
+                />
+
+            <Entry 
+            x:Name="Day"
+            Placeholder="Enter text" 
+            BackgroundColor="LightGray"
+            TranslationX="0"
+            TranslationY="0"
+            TextColor="Black"    
+                />
+
+            <Label
+            Text="Time"
+            TextColor="Black"
+                />
+
+            <Entry 
+            x:Name="Time"
+            Placeholder="Enter text" 
+            BackgroundColor="LightGray"
+            TranslationX="0"
+            TranslationY="0"
+            TextColor="Black"    
+                />
+
+            <Label
+            Text="Cost"
+            TextColor="Black"
+                />
+
+            <Entry 
+            x:Name="Cost"
+            Placeholder="Enter text"
+            BackgroundColor="LightGray"
+            TranslationX="0"
+            TranslationY="0"
+            TextColor="Black"    
+                />
+
+            <Label
+            Text="Name"
+            TextColor="Black"
+                />
+
+            <Entry 
+            x:Name="Name"
+            Placeholder="Enter text"
+            BackgroundColor="LightGray"
+            TranslationX="0"
+            TranslationY="0"
+            TextColor="Black"
+                />
+
+            <Label
+            Text="CitizenShip"
+            TextColor="Black"
+                />
+
+            <Entry 
+            x:Name="Citizen"
+            Placeholder="Enter text"
+            BackgroundColor="LightGray"
+            TranslationX="0"
+            TranslationY="0"
+            TextColor="Black"
+                />
+
+            <Button
+            x:Name="Reservebtn"
+            Text="Click me"                         
+            TextColor="White"
+            BackgroundColor="CornflowerBlue"
+            TranslationX="0"
+            TranslationY="-10"
+                />
+
+
+            <Label
+                Text="Search"
+                TextColor="Black"
+                FontSize="30"
+                HorizontalTextAlignment="Center"
+                />
+
+            <Label
+                Text="Code:"
+                TextColor="Black"
+                />
+
+            <Entry 
+            x:Name="Code"
+            Placeholder="Enter text"
+            BackgroundColor="LightGray"
+            TranslationX="0"
+            TranslationY="0"
+            TextColor="Black"
+                />
+
+            <Label
+                Text="Airline:"
+                TextColor="Black"
+                />
+
+            <Entry 
+            x:Name="Aeroline"
+            Placeholder="Enter text"
+            BackgroundColor="LightGray"
+            TranslationX="0"
+            TranslationY="0"
+            TextColor="Black"
+                />
+
+            <Label
+                Text="Name"
+                TextColor="Black"
+                />
+
+            <Entry 
+            x:Name="naem"
+            Placeholder="Enter text"
+            BackgroundColor="LightGray"
+            TranslationX="0"
+            TranslationY="0"
+            TextColor="Black"
+                />
+
+            <Button
+             Text="Find"
+             TextColor="White"
+             BackgroundColor="CornflowerBlue"
+                />
+
+
+            <Label
+                Text="Reservations"
+                FontSize="30"
+                TextColor="Black"
+                HorizontalOptions="Center"
+                />
+
+            <Picker
+            BackgroundColor="LightGray"
+            TranslationX="0"
+            TranslationY="0"
+            TextColor="Black"
+            HorizontalOptions="Center"
+            WidthRequest="1800"
+                />
+            
+            <Label
+                />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
