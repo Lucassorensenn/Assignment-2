@@ -11,11 +11,13 @@ public partial class MainPage : ContentPage
 
 
 
-
+//Lucas's part
     private void OnFlight (object sender, EventArgs e)
     {
         flight.Text = "Flight found";
     }
+//
+
 
 
     //From
