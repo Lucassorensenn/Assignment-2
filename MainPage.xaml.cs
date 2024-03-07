@@ -13,8 +13,28 @@ public partial class MainPage : ContentPage
 
 //Lucas's part
     private void OnFlight (object sender, EventArgs e)
-    {
-        flight.Text = "Flight found";
+    { 
+        //input data
+        string fromtxt = From.Text;
+        string totxt = To.Text;
+        string daytxt = Days.Text;
+       
+
+        string[] lines = System.IO.File.ReadAllLines(@"E:\flights (2).csv");
+
+        foreach (string line in lines)
+        {
+            string[] parts = line.Split(',');
+
+            string arrivedFrom = parts[1];
+            
+            string day = parts[4];
+
+            if(arrivedFrom == From.Text && day == Days.Text)
+            {
+                flight.Text = line;
+            }
+        }
     }
 //
 
