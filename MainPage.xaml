@@ -42,7 +42,7 @@
             TranslationY="-32"
                 />
             <Label
-            Text="Des:"
+            Text="Day"
             TextColor="Black"
             TranslationX="825"
             TranslationY="-78"
@@ -76,10 +76,10 @@
             />
 
             <Entry 
-            x:Name="Des"
-            Placeholder="Des"
-            TextChanged="OnDesTextChanged"
-            Completed="OnDesCompleted" 
+            x:Name="Day"
+            Placeholder="Day"
+            TextChanged="OnDayTextChanged"
+            Completed="OnDayCompleted" 
             BackgroundColor="LightGray" 
             WidthRequest="350"
             TranslationX="100"
